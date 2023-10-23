@@ -4,13 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <Script src="index.js"></Script>
+    
 </head>
 <body>
     <h1 style="text-align: center;">FreeLancer Forum</h1>
     <p style="text-align: center; font-size:x-large;"></p>
     <h1 style="text-align: center;">Available Free Lancers</h1>
     <div id="freelancer-list"></div>
+    <!-- Style for table-->
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <table id="freelancer-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Occupation</th>
+                <th>Starting Price</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <!---->
     
+    <Script src="index.js"></Script>
 </body>
 </html>
