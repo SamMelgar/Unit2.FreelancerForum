@@ -22,7 +22,7 @@ prices.forEach(freelancer => {
 //function to calculate Average from array
 
 function calculateAverage(prices) {
-    if (prices/length === 0) {
+    if (prices.length === 0) {
         return 0;
     }
     const total = prices.reduce((accumulator, currentValue) => accumulator + currentValue);
@@ -30,10 +30,10 @@ function calculateAverage(prices) {
 }
 
 //function to extra starting price to a separate array
-const startingPrice = prices.map(freelancer => freelancer.startingPrice);
+const startingPrices = prices.map(freelancer => freelancer.startingPrice);
 
 //calculate average starting price
-const averageStartingPrice = calculateAverage(averageStartingPrice);
+const averageStartingPrice = calculateAverage(startingPrices);
 
 //Prints average price to document
 const p = document.querySelector("p");
